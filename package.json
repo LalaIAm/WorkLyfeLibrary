@@ -23,7 +23,7 @@
     "build-storybook": "build-storybook -s public",
     "test:coverage": "cross-env CI=true yarn test -- --env=jsdom --coverage --coverageIgnorePatterns=[*/**/*.stories.js] --ci --reporters=default --reporters=jest-junit  --testResultsProcessor=jest-junit --runInBand",
     "upload:test-report": "./node_modules/.bin/codecov",
-    "chromatic": "npx chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
+    "chromatic": "npx chromatic  --exit-zero-on-changes"
   },
   "eslintConfig": {
     "extends": [
