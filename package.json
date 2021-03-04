@@ -19,7 +19,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "test:coverage": "cross-env CI=true yarn test -- --env=jsdom --coverage",
+    "upload:test-report": "./node_modules/.bin/codecov"
   },
   "eslintConfig": {
     "extends": [
