@@ -21,4 +21,10 @@ describe("The Button component", () => {
       
       expect(wrapper.prop('children')).toContain(text)
   })
+
+  it('passes appearance prop through', () => {
+      const appearance = 'primary';
+      wrapper.setProps({appearance})
+      expect(wrapper.prop('appearance')).toBe(appearance)
+  })
 });
