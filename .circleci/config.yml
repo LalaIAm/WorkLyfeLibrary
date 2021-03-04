@@ -27,10 +27,10 @@ jobs:
           command: yarn test:coverage 
 
       - store_test_results:
-          path: './test-results'
+          path: ./test-results 
 
       - store_artifacts:
-          path: './test-results'
+          path: ./test-results
 
       - codecov/upload:
           file: './coverage/clover.xml'
