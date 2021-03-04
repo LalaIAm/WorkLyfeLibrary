@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="2.578">
+  <testsuite name="The Button component" errors="0" failures="0" skipped="0" timestamp="2021-03-04T05:11:38" time="1.282" tests="2">
+    <testcase classname="The Button component renders a &lt;button&gt;" name="The Button component renders a &lt;button&gt;" time="0.004">
+    </testcase>
+    <testcase classname="The Button component correctly renders its children" name="The Button component correctly renders its children" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-03-04T05:11:39" time="0.256" tests="1">
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.02">
+    </testcase>
+  </testsuite>
+</testsuites>
