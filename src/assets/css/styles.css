@@ -1,0 +1,1964 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rock+Salt&display=swap");
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+html {
+  font-size: 100%; }
+
+/*16px*/
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+body {
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #26143f; }
+
+/* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+p {
+  margin-bottom: 1rem; }
+
+/* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3; }
+
+/* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem; }
+
+/* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h2 {
+  font-size: 3.157rem; }
+
+/* line 42, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h3 {
+  font-size: 2.369rem; }
+
+/* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h4 {
+  font-size: 1.777rem; }
+
+/* line 50, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+h5 {
+  font-size: 1.333rem; }
+
+/* line 54, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/variables/_fonts.scss */
+small,
+.text_small {
+  font-size: 0.75rem; }
+
+/* ==========================================================================
+
+// Base Stylesheet - http://getbase.org
+// Author: Matthew Hartman - http://www.matthewhartman.com.au/
+
+========================================================================== */
+/* line 1, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/core.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/core.scss */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/core.scss */
+body {
+  margin: 0; }
+
+/* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/core.scss */
+.sr {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 1, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/code.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1rem; }
+
+/* line 1, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button, input {
+  overflow: visible; }
+
+/* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button, select {
+  text-transform: none; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+/* line 49, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+progress {
+  vertical-align: baseline; }
+
+/* line 53, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+textarea {
+  overflow: auto; }
+
+/* line 57, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 63, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 68, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+/* line 73, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 75, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/forms.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+/* line 1, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/tables.scss */
+table {
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #e9e9e9; }
+
+/* line 9, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/tables.scss */
+table td,
+table th {
+  padding: 1rem;
+  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/tables.scss */
+table tr:nth-child(2n) {
+  background-color: #f6f8fa; }
+
+/* line 8, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #232323;
+  font-weight: 400;
+  background: #fff; }
+
+/* line 17, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+main, details {
+  display: block; }
+
+/* line 19, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+a {
+  background-color: transparent; }
+
+/* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+b, .b, strong, .strong {
+  font-weight: 700; }
+
+/* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+em, .em {
+  font-style: italic; }
+
+/* line 25, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+/* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
+
+/* line 37, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+small, .small {
+  font-size: .8125rem; }
+
+/* line 39, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 47, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+sup {
+  top: -0.5em; }
+
+/* line 49, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+img {
+  border-style: none; }
+
+/* line 51, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography.scss */
+template, [hidden] {
+  display: none; }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/containers.scss */
+.container {
+  max-width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media only screen and (min-width: 768px) {
+  /* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/containers.scss */
+  .container-m {
+    width: 736px;
+    max-width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/containers.scss */
+  .container-l {
+    width: 948px;
+    max-width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/containers.scss */
+  .container-xl {
+    width: 1168px;
+    max-width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: -16px;
+  margin-right: -16px; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-1-2,
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-3-4,
+.col-1-5,
+.col-2-5,
+.col-3-5,
+.col-4-5 {
+  flex: 0 0 auto;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
+
+/* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1-2 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 50, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1-3 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
+
+/* line 54, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-2-3 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
+
+/* line 58, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1-4 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 62, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-3-4 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+/* line 66, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-1-5 {
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+/* line 70, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-2-5 {
+  flex: 0 0 40%;
+  max-width: 40%; }
+
+/* line 74, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-3-5 {
+  flex: 0 0 60%;
+  max-width: 60%; }
+
+/* line 78, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-4-5 {
+  flex: 0 0 80%;
+  max-width: 80%; }
+
+/* line 82, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+.col-full {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  /* line 90, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .row-m {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px; }
+  /* line 98, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-m,
+  .col-2-m,
+  .col-3-m,
+  .col-4-m,
+  .col-5-m,
+  .col-6-m,
+  .col-7-m,
+  .col-8-m,
+  .col-9-m,
+  .col-10-m,
+  .col-11-m,
+  .col-12-m,
+  .col-1-2-m,
+  .col-1-3-m,
+  .col-2-3-m,
+  .col-1-4-m,
+  .col-3-4-m,
+  .col-1-5-m,
+  .col-2-5-m,
+  .col-3-5-m,
+  .col-4-5-m {
+    flex: 0 0 auto;
+    padding-left: 16px;
+    padding-right: 16px; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-m {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-m {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-m {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-m {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-5-m {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-6-m {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-7-m {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-8-m {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-9-m {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-10-m {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-11-m {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+  /* line 127, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-12-m {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 132, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-2-m {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 136, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-3-m {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 140, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-3-m {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 144, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-4-m {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 148, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-4-m {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 152, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-5-m {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  /* line 156, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-5-m {
+    flex: 0 0 40%;
+    max-width: 40%; }
+  /* line 160, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-5-m {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  /* line 164, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-5-m {
+    flex: 0 0 80%;
+    max-width: 80%; }
+  /* line 168, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-full-m {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 177, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .row-l {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px; }
+  /* line 185, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-l,
+  .col-2-l,
+  .col-3-l,
+  .col-4-l,
+  .col-5-l,
+  .col-6-l,
+  .col-7-l,
+  .col-8-l,
+  .col-9-l,
+  .col-10-l,
+  .col-11-l,
+  .col-12-l,
+  .col-1-2-l,
+  .col-1-3-l,
+  .col-2-3-l,
+  .col-1-4-l,
+  .col-3-4-l,
+  .col-1-5-l,
+  .col-2-5-l,
+  .col-3-5-l,
+  .col-4-5-l {
+    flex: 0 0 auto;
+    padding-left: 16px;
+    padding-right: 16px; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-l {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-l {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-l {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-l {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-5-l {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-6-l {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-7-l {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-8-l {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-9-l {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-10-l {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-11-l {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+  /* line 214, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-12-l {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 219, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-2-l {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 223, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-3-l {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 227, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-3-l {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 231, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-4-l {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 235, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-4-l {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 239, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-5-l {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  /* line 243, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-5-l {
+    flex: 0 0 40%;
+    max-width: 40%; }
+  /* line 247, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-5-l {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  /* line 251, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-5-l {
+    flex: 0 0 80%;
+    max-width: 80%; }
+  /* line 255, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-full-l {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 264, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .row-xl {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px; }
+  /* line 272, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-xl,
+  .col-2-xl,
+  .col-3-xl,
+  .col-4-xl,
+  .col-5-xl,
+  .col-6-xl,
+  .col-7-xl,
+  .col-8-xl,
+  .col-9-xl,
+  .col-10-xl,
+  .col-11-xl,
+  .col-12-xl,
+  .col-1-2-xl,
+  .col-1-3-xl,
+  .col-2-3-xl,
+  .col-1-4-xl,
+  .col-3-4-xl,
+  .col-1-5-xl,
+  .col-2-5-xl,
+  .col-3-5-xl,
+  .col-4-5-xl {
+    flex: 0 0 auto;
+    padding-left: 16px;
+    padding-right: 16px; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-xl {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-xl {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-xl {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-xl {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-5-xl {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-6-xl {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-7-xl {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-8-xl {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-9-xl {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-10-xl {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-11-xl {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+  /* line 301, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-12-xl {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 306, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-2-xl {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 310, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-3-xl {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+  /* line 314, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-3-xl {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+  /* line 318, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-4-xl {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 322, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-4-xl {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 326, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-1-5-xl {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  /* line 330, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-2-5-xl {
+    flex: 0 0 40%;
+    max-width: 40%; }
+  /* line 334, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-3-5-xl {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  /* line 338, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-4-5-xl {
+    flex: 0 0 80%;
+    max-width: 80%; }
+  /* line 342, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/grid.scss */
+  .col-full-xl {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-0-25rem {
+  padding-left: 0.25rem; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-0-5rem {
+  padding-left: 0.5rem; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-1rem {
+  padding-left: 1rem; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-1-5rem {
+  padding-left: 1.5rem; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-2rem {
+  padding-left: 2rem; }
+
+/* line 8, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-3rem {
+  padding-left: 3rem; }
+
+/* line 9, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-4rem {
+  padding-left: 4rem; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-left-5rem {
+  padding-left: 5rem; }
+
+/* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-0-25rem {
+  padding-right: 0.25rem; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-0-5rem {
+  padding-right: 0.5rem; }
+
+/* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-1rem {
+  padding-right: 1rem; }
+
+/* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-1-5rem {
+  padding-right: 1.5rem; }
+
+/* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-2rem {
+  padding-right: 2rem; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-3rem {
+  padding-right: 3rem; }
+
+/* line 17, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-4rem {
+  padding-right: 4rem; }
+
+/* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+.padding-right-5rem {
+  padding-right: 5rem; }
+
+@media only screen and (min-width: 768px) {
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-m {
+    padding-left: 0; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-25rem-m {
+    padding-left: 0.25rem; }
+  /* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-5rem-m {
+    padding-left: 0.5rem; }
+  /* line 24, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1rem-m {
+    padding-left: 1rem; }
+  /* line 25, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1-5rem-m {
+    padding-left: 1.5rem; }
+  /* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-2rem-m {
+    padding-left: 2rem; }
+  /* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-3rem-m {
+    padding-left: 3rem; }
+  /* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-4rem-m {
+    padding-left: 4rem; }
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-5rem-m {
+    padding-left: 5rem; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-m {
+    padding-right: 0; }
+  /* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-25rem-m {
+    padding-right: 0.25rem; }
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-5rem-m {
+    padding-right: 0.5rem; }
+  /* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1rem-m {
+    padding-right: 1rem; }
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1-5rem-m {
+    padding-right: 1.5rem; }
+  /* line 35, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-2rem-m {
+    padding-right: 2rem; }
+  /* line 36, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-3rem-m {
+    padding-right: 3rem; }
+  /* line 37, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-4rem-m {
+    padding-right: 4rem; }
+  /* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-5rem-m {
+    padding-right: 5rem; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 42, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-l {
+    padding-left: 0; }
+  /* line 43, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-25rem-l {
+    padding-left: 0.25rem; }
+  /* line 44, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-5rem-l {
+    padding-left: 0.5rem; }
+  /* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1rem-l {
+    padding-left: 1rem; }
+  /* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1-5rem-l {
+    padding-left: 1.5rem; }
+  /* line 47, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-2rem-l {
+    padding-left: 2rem; }
+  /* line 48, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-3rem-l {
+    padding-left: 3rem; }
+  /* line 49, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-4rem-l {
+    padding-left: 4rem; }
+  /* line 50, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-5rem-l {
+    padding-left: 5rem; }
+  /* line 51, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-l {
+    padding-right: 0; }
+  /* line 52, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-25rem-l {
+    padding-right: 0.25rem; }
+  /* line 53, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-5rem-l {
+    padding-right: 0.5rem; }
+  /* line 54, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1rem-l {
+    padding-right: 1rem; }
+  /* line 55, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1-5rem-l {
+    padding-right: 1.5rem; }
+  /* line 56, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-2rem-l {
+    padding-right: 2rem; }
+  /* line 57, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-3rem-l {
+    padding-right: 3rem; }
+  /* line 58, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-4rem-l {
+    padding-right: 4rem; }
+  /* line 59, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-5rem-l {
+    padding-right: 5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 63, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-xl {
+    padding-left: 0; }
+  /* line 64, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-25rem-xl {
+    padding-left: 0.25rem; }
+  /* line 65, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-0-5rem-xl {
+    padding-left: 0.5rem; }
+  /* line 66, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1rem-xl {
+    padding-left: 1rem; }
+  /* line 67, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-1-5rem-xl {
+    padding-left: 1.5rem; }
+  /* line 68, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-2rem-xl {
+    padding-left: 2rem; }
+  /* line 69, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-3rem-xl {
+    padding-left: 3rem; }
+  /* line 70, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-4rem-xl {
+    padding-left: 4rem; }
+  /* line 71, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-left-5rem-xl {
+    padding-left: 5rem; }
+  /* line 72, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-xl {
+    padding-right: 0; }
+  /* line 73, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-25rem-xl {
+    padding-right: 0.25rem; }
+  /* line 74, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-0-5rem-xl {
+    padding-right: 0.5rem; }
+  /* line 75, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1rem-xl {
+    padding-right: 1rem; }
+  /* line 76, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-1-5rem-xl {
+    padding-right: 1.5rem; }
+  /* line 77, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-2rem-xl {
+    padding-right: 2rem; }
+  /* line 78, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-3rem-xl {
+    padding-right: 3rem; }
+  /* line 79, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-4rem-xl {
+    padding-right: 4rem; }
+  /* line 80, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/horizontal-spacers.scss */
+  .padding-right-5rem-xl {
+    padding-right: 5rem; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-0-25rem {
+  padding-top: 0.25rem; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-0-5rem {
+  padding-top: 0.5rem; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-1rem {
+  padding-top: 1rem; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-1-5rem {
+  padding-top: 1.5rem; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-2rem {
+  padding-top: 2rem; }
+
+/* line 8, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-3rem {
+  padding-top: 3rem; }
+
+/* line 9, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-4rem {
+  padding-top: 4rem; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-top-5rem {
+  padding-top: 5rem; }
+
+/* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-0-25rem {
+  padding-bottom: 0.25rem; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-0-5rem {
+  padding-bottom: 0.5rem; }
+
+/* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-1rem {
+  padding-bottom: 1rem; }
+
+/* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-1-5rem {
+  padding-bottom: 1.5rem; }
+
+/* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-2rem {
+  padding-bottom: 2rem; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-3rem {
+  padding-bottom: 3rem; }
+
+/* line 17, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-4rem {
+  padding-bottom: 4rem; }
+
+/* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+.padding-bottom-5rem {
+  padding-bottom: 5rem; }
+
+@media only screen and (min-width: 768px) {
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-m {
+    padding-top: 0; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-25rem-m {
+    padding-top: 0.25rem; }
+  /* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-5rem-m {
+    padding-top: 0.5rem; }
+  /* line 24, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1rem-m {
+    padding-top: 1rem; }
+  /* line 25, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1-5rem-m {
+    padding-top: 1.5rem; }
+  /* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-2rem-m {
+    padding-top: 2rem; }
+  /* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-3rem-m {
+    padding-top: 3rem; }
+  /* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-4rem-m {
+    padding-top: 4rem; }
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-5rem-m {
+    padding-top: 5rem; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-m {
+    padding-bottom: 0; }
+  /* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-25rem-m {
+    padding-bottom: 0.25rem; }
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-5rem-m {
+    padding-bottom: 0.5rem; }
+  /* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1rem-m {
+    padding-bottom: 1rem; }
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1-5rem-m {
+    padding-bottom: 1.5rem; }
+  /* line 35, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-2rem-m {
+    padding-bottom: 2rem; }
+  /* line 36, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-3rem-m {
+    padding-bottom: 3rem; }
+  /* line 37, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-4rem-m {
+    padding-bottom: 4rem; }
+  /* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-5rem-m {
+    padding-bottom: 5rem; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 42, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-l {
+    padding-top: 0; }
+  /* line 43, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-25rem-l {
+    padding-top: 0.25rem; }
+  /* line 44, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-5rem-l {
+    padding-top: 0.5rem; }
+  /* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1rem-l {
+    padding-top: 1rem; }
+  /* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1-5rem-l {
+    padding-top: 1.5rem; }
+  /* line 47, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-2rem-l {
+    padding-top: 2rem; }
+  /* line 48, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-3rem-l {
+    padding-top: 3rem; }
+  /* line 49, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-4rem-l {
+    padding-top: 4rem; }
+  /* line 50, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-5rem-l {
+    padding-top: 5rem; }
+  /* line 51, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-l {
+    padding-bottom: 0; }
+  /* line 52, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-25rem-l {
+    padding-bottom: 0.25rem; }
+  /* line 53, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-5rem-l {
+    padding-bottom: 0.5rem; }
+  /* line 54, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1rem-l {
+    padding-bottom: 1rem; }
+  /* line 55, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1-5rem-l {
+    padding-bottom: 1.5rem; }
+  /* line 56, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-2rem-l {
+    padding-bottom: 2rem; }
+  /* line 57, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-3rem-l {
+    padding-bottom: 3rem; }
+  /* line 58, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-4rem-l {
+    padding-bottom: 4rem; }
+  /* line 59, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-5rem-l {
+    padding-bottom: 5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 63, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-xl {
+    padding-top: 0; }
+  /* line 64, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-25rem-xl {
+    padding-top: 0.25rem; }
+  /* line 65, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-0-5rem-xl {
+    padding-top: 0.5rem; }
+  /* line 66, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1rem-xl {
+    padding-top: 1rem; }
+  /* line 67, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-1-5rem-xl {
+    padding-top: 1.5rem; }
+  /* line 68, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-2rem-xl {
+    padding-top: 2rem; }
+  /* line 69, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-3rem-xl {
+    padding-top: 3rem; }
+  /* line 70, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-4rem-xl {
+    padding-top: 4rem; }
+  /* line 71, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-top-5rem-xl {
+    padding-top: 5rem; }
+  /* line 72, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-xl {
+    padding-bottom: 0; }
+  /* line 73, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-25rem-xl {
+    padding-bottom: 0.25rem; }
+  /* line 74, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-0-5rem-xl {
+    padding-bottom: 0.5rem; }
+  /* line 75, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1rem-xl {
+    padding-bottom: 1rem; }
+  /* line 76, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-1-5rem-xl {
+    padding-bottom: 1.5rem; }
+  /* line 77, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-2rem-xl {
+    padding-bottom: 2rem; }
+  /* line 78, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-3rem-xl {
+    padding-bottom: 3rem; }
+  /* line 79, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-4rem-xl {
+    padding-bottom: 4rem; }
+  /* line 80, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/vertical-spacers.scss */
+  .padding-bottom-5rem-xl {
+    padding-bottom: 5rem; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-0 {
+  padding: 0rem; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-0-25rem {
+  padding: 0.25rem; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-0-5rem {
+  padding: 0.5rem; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-1rem {
+  padding: 1rem; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-1-5rem {
+  padding: 1.5rem; }
+
+/* line 8, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-2rem {
+  padding: 2rem; }
+
+/* line 9, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-3rem {
+  padding: 3rem; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-4rem {
+  padding: 4rem; }
+
+/* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+.padding-5rem {
+  padding: 5rem; }
+
+@media only screen and (min-width: 768px) {
+  /* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-m {
+    padding: 0; }
+  /* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-25rem-m {
+    padding: 0.25rem; }
+  /* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-5rem-m {
+    padding: 0.5rem; }
+  /* line 17, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1rem-m {
+    padding: 1rem; }
+  /* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1-5rem-m {
+    padding: 1.5rem; }
+  /* line 19, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-2rem-m {
+    padding: 2rem; }
+  /* line 20, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-3rem-m {
+    padding: 3rem; }
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-4rem-m {
+    padding: 4rem; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-5rem-m {
+    padding: 5rem; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-l {
+    padding: 0; }
+  /* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-25rem-l {
+    padding: 0.25rem; }
+  /* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-5rem-l {
+    padding: 0.5rem; }
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1rem-l {
+    padding: 1rem; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1-5rem-l {
+    padding: 1.5rem; }
+  /* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-2rem-l {
+    padding: 2rem; }
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-3rem-l {
+    padding: 3rem; }
+  /* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-4rem-l {
+    padding: 4rem; }
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-5rem-l {
+    padding: 5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-xl {
+    padding: 0; }
+  /* line 39, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-25rem-xl {
+    padding: 0.25rem; }
+  /* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-0-5rem-xl {
+    padding: 0.5rem; }
+  /* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1rem-xl {
+    padding: 1rem; }
+  /* line 42, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-1-5rem-xl {
+    padding: 1.5rem; }
+  /* line 43, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-2rem-xl {
+    padding: 2rem; }
+  /* line 44, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-3rem-xl {
+    padding: 3rem; }
+  /* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-4rem-xl {
+    padding: 4rem; }
+  /* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/spacers.scss */
+  .padding-5rem-xl {
+    padding: 5rem; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+.none {
+  display: none; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+.block {
+  display: block; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+.inline-block {
+  display: inline-block; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+.inline {
+  display: inline; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+.flex {
+  display: flex; }
+
+@media only screen and (min-width: 768px) {
+  /* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .none-m {
+    display: none; }
+  /* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .block-m {
+    display: block; }
+  /* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-block-m {
+    display: inline-block; }
+  /* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-m {
+    display: inline; }
+  /* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .flex-m {
+    display: flex; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .none-l {
+    display: none; }
+  /* line 19, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .block-l {
+    display: block; }
+  /* line 20, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-block-l {
+    display: inline-block; }
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-l {
+    display: inline; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .flex-l {
+    display: flex; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .none-xl {
+    display: block; }
+  /* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .block-xl {
+    display: block; }
+  /* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-block-xl {
+    display: inline-block; }
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .inline-xl {
+    display: inline; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/display-helpers.scss */
+  .flex-xl {
+    display: flex; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-wrap {
+  flex-wrap: wrap; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-nowrap {
+  flex-wrap: nowrap; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-align-items-top {
+  align-items: center; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-align-items-center {
+  align-items: center; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-align-items-bottom {
+  align-items: center; }
+
+/* line 8, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-justify-left {
+  justify-content: flex-start; }
+
+/* line 9, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-justify-center {
+  justify-content: center; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-justify-right {
+  justify-content: flex-end; }
+
+/* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-space-around {
+  justify-content: space-around; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-space-between {
+  justify-content: space-between; }
+
+/* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-row {
+  flex-direction: row; }
+
+/* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-row-reverse {
+  flex-direction: row-reverse; }
+
+/* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-column {
+  flex-direction: column; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+.flex-column-reverse {
+  flex-direction: column-reverse; }
+
+@media only screen and (min-width: 768px) {
+  /* line 19, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-wrap-m {
+    flex-wrap: wrap; }
+  /* line 20, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-nowrap-m {
+    flex-wrap: nowrap; }
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-top-m {
+    align-items: center; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-center-m {
+    align-items: center; }
+  /* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-bottom-m {
+    align-items: center; }
+  /* line 24, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-left-m {
+    justify-content: flex-start; }
+  /* line 25, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-center-m {
+    justify-content: center; }
+  /* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-right-m {
+    justify-content: flex-end; }
+  /* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-around-m {
+    justify-content: space-around; }
+  /* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-between-m {
+    justify-content: space-between; }
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-m {
+    flex-direction: row; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-reverse-m {
+    flex-direction: row-reverse; }
+  /* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-m {
+    flex-direction: column; }
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-reverse-m {
+    flex-direction: column-reverse; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 36, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-wrap-l {
+    flex-wrap: wrap; }
+  /* line 37, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-nowrap-l {
+    flex-wrap: nowrap; }
+  /* line 38, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-top-l {
+    align-items: center; }
+  /* line 39, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-center-l {
+    align-items: center; }
+  /* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-bottom-l {
+    align-items: center; }
+  /* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-left-l {
+    justify-content: flex-start; }
+  /* line 42, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-center-l {
+    justify-content: center; }
+  /* line 43, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-right-l {
+    justify-content: flex-end; }
+  /* line 44, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-around-l {
+    justify-content: space-around; }
+  /* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-between-l {
+    justify-content: space-between; }
+  /* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-l {
+    flex-direction: row; }
+  /* line 47, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-reverse-l {
+    flex-direction: row-reverse; }
+  /* line 48, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-l {
+    flex-direction: column; }
+  /* line 49, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-reverse-l {
+    flex-direction: column-reverse; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 53, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-wrap-xl {
+    flex-wrap: wrap; }
+  /* line 54, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-nowrap-xl {
+    flex-wrap: nowrap; }
+  /* line 55, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-top-xl {
+    align-items: center; }
+  /* line 56, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-center-xl {
+    align-items: center; }
+  /* line 57, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-align-items-bottom-xl {
+    align-items: center; }
+  /* line 58, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-left-xl {
+    justify-content: flex-start; }
+  /* line 59, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-center-xl {
+    justify-content: center; }
+  /* line 60, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-justify-right-xl {
+    justify-content: flex-end; }
+  /* line 61, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-around-xl {
+    justify-content: space-around; }
+  /* line 62, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-space-between-xl {
+    justify-content: space-between; }
+  /* line 63, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-xl {
+    flex-direction: row; }
+  /* line 64, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-row-reverse-xl {
+    flex-direction: row-reverse; }
+  /* line 65, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-xl {
+    flex-direction: column; }
+  /* line 66, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/flex-helpers.scss */
+  .flex-column-reverse-xl {
+    flex-direction: column-reverse; } }
+
+/* line 3, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+.relative {
+  position: relative; }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+.absolute {
+  position: absolute; }
+
+/* line 5, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+.static {
+  position: static; }
+
+/* line 6, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+.fixed {
+  position: fixed; }
+
+/* line 7, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+.sticky {
+  position: sticky; }
+
+@media only screen and (min-width: 768px) {
+  /* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .relative-m {
+    position: relative; }
+  /* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .absolute-m {
+    position: absolute; }
+  /* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .static-m {
+    position: static; }
+  /* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .fixed-m {
+    position: fixed; }
+  /* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .sticky-m {
+    position: sticky; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 20, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .relative-l {
+    position: relative; }
+  /* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .absolute-l {
+    position: absolute; }
+  /* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .static-l {
+    position: static; }
+  /* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .fixed-l {
+    position: fixed; }
+  /* line 24, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .sticky-l {
+    position: sticky; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 29, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .relative-xl {
+    position: relative; }
+  /* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .absolute-xl {
+    position: absolute; }
+  /* line 31, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .static-xl {
+    position: static; }
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .fixed-xl {
+    position: fixed; }
+  /* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/position-helpers.scss */
+  .sticky-xl {
+    position: sticky; } }
+
+/* line 4, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.no-select {
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: default; }
+
+/* line 10, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-100 {
+  font-weight: 100; }
+
+/* line 11, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-200 {
+  font-weight: 200; }
+
+/* line 12, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-300 {
+  font-weight: 300; }
+
+/* line 13, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-400 {
+  font-weight: 400; }
+
+/* line 14, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-500 {
+  font-weight: 500; }
+
+/* line 15, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-600 {
+  font-weight: 600; }
+
+/* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-700 {
+  font-weight: 700; }
+
+/* line 17, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-800 {
+  font-weight: 800; }
+
+/* line 18, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.font-900 {
+  font-weight: 900; }
+
+/* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.uppercase {
+  text-transform: uppercase; }
+
+/* line 22, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.lowercase {
+  text-transform: lowercase; }
+
+/* line 23, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.capitalize {
+  text-transform: capitalize; }
+
+/* line 26, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.text-left {
+  text-align: left; }
+
+/* line 27, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.text-right {
+  text-align: right; }
+
+/* line 28, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+.text-center {
+  text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  /* line 32, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-left-m {
+    text-align: left; }
+  /* line 33, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-right-m {
+    text-align: right; }
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-center-m {
+    text-align: center; } }
+
+@media only screen and (min-width: 980px) {
+  /* line 39, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-left-l {
+    text-align: left; }
+  /* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-right-l {
+    text-align: right; }
+  /* line 41, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-center-l {
+    text-align: center; } }
+
+@media only screen and (min-width: 1200px) {
+  /* line 46, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-left-xl {
+    text-align: left; }
+  /* line 47, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-right-xl {
+    text-align: right; }
+  /* line 48, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/base/typography-helpers.scss */
+  .text-center-xl {
+    text-align: center; } }
+
+/* line 1, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn {
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  transform: translate3d(0, 0, 0);
+  transition: all .3s ease-in;
+  background: transparent;
+  color: rgba(38, 20, 63, 0.8);
+  font-size: .8rem; }
+  /* line 16, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+  .btn:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4); }
+
+/* line 21, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--primary {
+  background: #07DED7; }
+  /* line 24, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+  .btn--primary:hover {
+    background: #ba006d;
+    color: rgba(232, 243, 241, 0.8); }
+
+/* line 30, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--secondary {
+  background: #ba006d;
+  color: rgba(232, 243, 241, 0.8); }
+  /* line 34, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+  .btn--secondary:hover {
+    background: #07DED7;
+    color: rgba(38, 20, 63, 0.8); }
+
+/* line 40, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--outlined {
+  box-shadow: none;
+  box-shadow: inset 0px 0px 1px 1px #07DED7;
+  color: #07DED7; }
+  /* line 45, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+  .btn--outlined:hover {
+    color: rgba(38, 20, 63, 0.8);
+    background: #07DED7;
+    box-shadow: none; }
+
+/* line 52, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--transparent {
+  box-shadow: none; }
+  /* line 55, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+  .btn--transparent:hover {
+    box-shadow: none;
+    background-color: rgba(7, 222, 215, 0.3); }
+
+/* line 61, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--medium {
+  padding: .4rem 1rem; }
+
+/* line 65, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--large {
+  padding: .5rem 1.5rem;
+  font-size: 1rem; }
+
+/* line 70, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--small {
+  font-size: .6rem;
+  padding: .3rem .8rem; }
+
+/* line 75, ../../../../Dropbox/ibmc/appwrite/writer/src/assets/scss/components/_button.scss */
+.btn--disabled {
+  background: rgba(149, 177, 174, 0.6) !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  color: #26143f !important; }
+/*# sourceMappingURL=styles.css.map */

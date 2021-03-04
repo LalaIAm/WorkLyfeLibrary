@@ -1,0 +1,80 @@
+.btn {
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+    transform: translate3d(0,0,0);
+    transition: all .3s ease-in;
+    background: transparent;
+    color: transparentize($dark, 0.2);
+    font-size: .8rem;
+
+    &:hover {
+        box-shadow: $box-shadow-sm;
+    }
+}
+
+.btn--primary {
+    background: $primary;
+
+    &:hover {
+        background: $secondary;
+        color: transparentize($light, 0.2);
+    }
+}
+
+.btn--secondary {
+    background: $secondary;
+    color: transparentize($light, 0.2);
+
+    &:hover {
+        background: $primary;
+        color: transparentize($dark, 0.2);
+    }
+}
+
+.btn--outlined {
+    box-shadow: none;
+    box-shadow: inset 0px 0px 1px 1px $primary;
+    color: $primary;
+
+    &:hover {
+        color: transparentize($dark, 0.2);
+        background: $primary;
+        box-shadow: none;
+    }
+}
+
+.btn--transparent {
+    box-shadow: none;
+
+    &:hover {
+        box-shadow: none;
+        background-color: transparentize($primary, 0.7);
+    }
+}
+
+.btn--medium {
+    padding: .4rem 1rem;
+}
+
+.btn--large {
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.btn--small {
+    font-size: .6rem;
+    padding: .3rem .8rem;
+}
+
+.btn--disabled {
+    background: transparentize($muted, .4) !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+    color: $dark !important;
+}
